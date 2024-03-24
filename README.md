@@ -1,2 +1,2 @@
-# First-Website
-our first website
+# The Valley Co.
+apperal made for the Fort Worth community
