@@ -92,3 +92,13 @@
     border-radius: 3px;
     margin: 3px;
 }
+.image-container {
+  position: relative;
+  width: 300px; /* Adjust size according to your image */
+  height: 200px; /* Adjust size according to your image */
+}
+
+/* Initially hide the hover image */
+.hidden {
+  display: none;
+}

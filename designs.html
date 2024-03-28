@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+        
+    <body>
+        <div class="container">
+            <h1 class="carlito-bold">
+                ⬇️ Our Shirts ⬇️
+            </h1>
+            <div class="image-container">
+                <img src="img/VLoan - WhiteF Model" alt="Original Image" id="original-image">
+                <img src="img/VLoan - WhiteB Model.png" alt="Hover Image" id="hover-image" class="hidden">
+            </div>
+        
+            <ul class="tiles-container">
+                
+                    <li class="tile-container ">
+                        <h3 class="carlito-bold">VLoan</h3>
+                        <a href="designs.html">
+                            <img width="95%" src="img/VLoan - WhiteF Model.png" />
+                        </a>
+                        <p class="carlito-regular">
+                            classic T-shirt
+                        </p>
+                    </li>
+                    
+                    <li class="tile-container ">
+                        <h3 class="carlito-bold">The Valley Athletics</h3>
+                        <a href="designs.html">
+                            <img width="95%" src="img/The Valley Athletic.png" />
+                        </a>
+                        <p class="carlito-regular">
+                            50% polyester/50% cotton athletic shirt
+                        </p>
+                    </li>
+                    
+                    <li class="tile-container ">
+                        <h3 class="carlito-bold">For The Valley</h3>
+                        <a href="graphicsportfolio.html">
+                            <img width="95%" src="img/Slide example.png" />
+                        </a>
+                        <p class="carlito-regular">
+                            100% cotton classic pocket T-shirt
+                        </p>
+                    </li>
+
+            </ul>
+        </div>
+    </body>
+</html>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+    const originalImage = document.getElementById("original-image");
+    const hoverImage = document.getElementById("hover-image");
+
+    // Add event listeners for mouseenter and mouseleave
+    originalImage.addEventListener("mouseenter", function() {
+        hoverImage.classList.remove("hidden"); // Show hover image
+        originalImage.classList.add("hidden"); // Hide original image
+    });
+
+    hoverImage.addEventListener("mouseleave", function() {
+        hoverImage.classList.add("hidden"); // Hide hover image
+        originalImage.classList.remove("hidden"); // Show original image
+    });
+});
+
+</script>
