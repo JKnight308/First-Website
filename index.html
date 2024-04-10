@@ -8,23 +8,75 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Yellowtail&display=swap" rel="stylesheet">
     <body>
-        <div class="container">
-            <h1 class="yellowtail-regular blue-text">
-                The Valley Co.
-            </h1>
+       
             <ul class="tiles-container">
                 
                     <li class="tile-container ">
                         <h3 class="merriweather-bold-italic">Designs</h3>
                         <a href="designs.html">
-                            <img width="95%" src="img/Logo.png" />
-                        </a>
-                        <p class="merriweather-bold">
-                            ⬆️ Click above to see our shirts ⬆️
-                       
+                            <img width="95%" src="img/The Valley Co..png" />
+                        </a>    
                     </li>
-
             </ul>
+        </div>    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Hover Effect</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 style="text-align: center;">⬇️ Our Shirts ⬇️</h1>
+    <div class="tiles-container">
+        <div class="image-container">
+            <img src="img/VLoan - WhiteF Model.png" alt="Original Image" class="original-image" height="338">
+            <img src="img/VLoan - WhiteB Model.png" alt="Hover Image" class="hover-image hidden" height="338">
+            <p>
+                50/50 Classic T-shirt
+            </p>
         </div>
-    </body>
+        <div class="image-container">
+            <img src="img/The Valley - BlackF.png" alt="Original Image" class="original-image" height="300">
+            <img src="img/The Valley - BlackB.png" alt="Hover Image" class="hover-image hidden" height="300">
+            <p>
+                100% Polyester The Valley Athletic Wear
+            </p>
+            <!-- Adjust the height attribute as needed -->
+        </div>
+        <div class="image-container">
+            <img src="img/FTV - WhiteF.png" alt="Original Image" class="original-image" height="338">
+            <img src="img/FTV - WhiteB.png" alt="Hover Image" class="hover-image hidden" height="338">
+            <p>
+                100% cotton classic pocket T
+            </p>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const originalImages = document.querySelectorAll(".original-image");
+            const hoverImages = document.querySelectorAll(".hover-image");
+
+            originalImages.forEach(function(originalImage, index) {
+                const hoverImage = hoverImages[index];
+
+                originalImage.addEventListener("mouseenter", function() {
+                    hoverImage.classList.remove("hidden"); // Show hover image
+                    originalImage.classList.add("hidden"); // Hide original image
+                });
+
+                hoverImage.addEventListener("mouseleave", function() {
+                    hoverImage.classList.add("hidden"); // Hide hover image
+                    originalImage.classList.remove("hidden"); // Show original image
+                });
+            });
+        });
+    </script>
+</body>
 </html>
